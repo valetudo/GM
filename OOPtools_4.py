@@ -45,7 +45,6 @@ class PatternRec:
             self.rets = self.dfFut.apply(lambda x: x[-1]- x[0])
             positiveOut = [i  for i in self.rets if i > 0]
             negativeOut = [i  for i in self.rets if i < 0]
-            negativeOut = [i  for i in self.rets if i < 0]
             positivePercent = (len(positiveOut)*100.)/len(self.rets)
             if  positivePercent > 65:
                 self.valoreAtteso =np.mean(positiveOut)
